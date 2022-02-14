@@ -18,21 +18,21 @@ That is, we would like to find the solution $x$ that \emph{minimises} the value 
     \item Applying numerical methods that iteratively search for points satisfying these conditions. 
 \end{enumerate}
 %
-This idea is central in several domains of knowledge, and very often are defined under area-specific nomenclature. Fields such as economics, engineering, statistics, machine learning and, perhaps more broadly, operations research, are intensive users and developers of optimisation theory and applications. 
+This idea is central in several domains of knowledge, and is very often defined under area-specific nomenclature. Fields such as economics, engineering, statistics, machine learning and, perhaps more broadly, operations research, are intensive users and developers of optimisation theory and applications. 
 
 \subsection{Mathematical programming and optimisation}
 
 Operations research and mathematical optimisation are somewhat intertwined, as they both were born around a similar circumstance. %(Include something on the history of OR)
 
-I like to separate \emph{mathematical programming} from (mathematical) \emph{optimisation}. Mathematical programming is a modelling paradigm, in which we rely on (very powerful, I might add) analogies to model \emph{real-world} problems. In that, we look at a given decision problem considering that
+I like to separate \emph{mathematical programming} from (mathematical) \emph{optimisation}. Mathematical programming is a modelling paradigm, in which we rely on (very powerful, I might add) analogies to model \emph{real-world} problems. In that, we look at a given decision problem, considering that
 %
 \begin{itemize}
-    \item \emph{variables} represent \emph{decisions}, as in a business decision or a course of action. Examples include setting the parameter of (e.g., prediction) model, production systems layouts, geometries of structures, topologies of networks, and so forth; 
+    \item \emph{variables} represent \emph{decisions}, as in a business decision or a course of action. Examples include setting the parameters of (e.g., prediction) models, production systems layouts, geometries of structures, topologies of networks, and so forth; 
     \item \emph{domain} represents business rules or \emph{constraints}, representing logic relations, design or engineering limitations, requirements, and such; 
-    \item function is an \emph{objective function} that provides a measure of solution quality.  
+    \item \emph{function} is an \emph{objective function} that provides a measure of solution quality.  
 \end{itemize}
 %    
-With these in mind, we can represent the decision problem as a \emph{mathematical programming model} of the form of \eqref{p1c1:eq:opt_prob} that can be solved using \emph{optimisation} methods. From now on, we will refer to this specific class of models as mathematical optimisation models, or optimisation models for short. We will also use the term to \emph{solve the problem} to refer to the task of finding optimal solutions to optimisation models.
+With these in mind, we can represent the decision problem as a \emph{mathematical programming model} of the form of \eqref{p1c1:eq:opt_prob} that can be solved using \emph{optimisation} methods. From now on, we will refer to this specific class of models as mathematical optimisation models, or optimisation models for short. We will also use the term \emph{to solve the problem} to refer to the task of finding optimal solutions to optimisation models.
 
 This book is mostly focused on the optimisation techniques employed to find optimal solutions for these models. As we will see, depending on the nature of the functions $f$ and $g$ that are used to formulate the model, some methods might be more or less appropriate. Further complicating the issue, for models of a given nature, there might be alternative algorithms that can be employed and with no generalised consense whether one method is generally better performing than another, which is one of the aspects that make optimisation so exciting and multifaceted when it comes to alternative approaches. I hope that this makes more sense as we progress through the chapters. 
 
