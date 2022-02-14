@@ -58,7 +58,7 @@ The most general types of models are the following. We also use this as an oppor
 %
 \begin{enumerate}
     \item \emph{Unconstrained models:} in these, the set $X = \reals^n$ and $m=l=0$. These are prominent in, e.g., machine learning and statistics applications, where $f$ represents a measure of model fitness or prediction error.  
-    \item \emph{Linear programming (LP):} presume a linear objective function $f(x) = c^\top x$ and affine constraints $g$ and $h$, i.e., of the form $a_i^\top x - b_i$, with $a_i \in \reals^n$ and $b \in \reals$. Normally, $X = \braces{x \in \reals^n \mid x_j \geq 0, j = 1,\dots, n}$ enforce that decision variables are constrained to be the nonnegative orthant.
+    \item \emph{Linear programming (LP):} presume a linear objective function $f(x) = c^\top x$ and affine constraints $g$ and $h$, i.e., of the form $a_i^\top x - b_i$, with $a_i \in \reals^n$ and $b_i \in \reals$. Normally, $X = \braces{x \in \reals^n \mid x_j \geq 0, j = 1,\dots, n}$ enforces that decision variables are constrained to be the nonnegative orthant.
     \item \emph{Nonlinear programming (NLP):} some or all of the functions $f$, $g$, and $h$ are nonlinear.
     \item \emph{Mixed-integer (linear) programming (MIP):} consist of an LP in which some (or all, being then simply integer programming) of the variables are constrained to be integers. In other words, $X \subseteq \reals^k \times \integers^{n-k}$. Very frequently, the integer variables are constrained to be binary terms, i.e., $x_i \in \braces {0,1}$, for $i = 1,\dots, n-k$ and are meant to represent true-or-false or yes-or-no conditions.
     \item \emph{Mixed-integer nonlinear programming (MINLP):} are the intersection of MIPs and NLPs.  
